@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UJIKOM CONNECT | Pendampingan Uji Kompetensi & LSP</title>
+  <meta name="description" content="UJIKOM CONNECT membantu kandidat memilih LSP yang sesuai, mengurus pengajuan uji kompetensi, dan mendapatkan pendampingan sampai ujikom selesai.">
+  <meta name="keywords" content="UJIKOM CONNECT, uji kompetensi, ujikom, LSP, lembaga sertifikasi profesi, sertifikasi profesi, pendampingan ujikom">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="UJIKOM CONNECT">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- Ganti URL di bawah setelah website memiliki domain sendiri -->
+  <link rel="canonical" href="https://ujikomconnect.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UJIKOM CONNECT | Pendampingan Uji Kompetensi & LSP">
+  <meta property="og:description" content="Bantu kandidat menemukan LSP yang sesuai dan mendapatkan pendampingan proses uji kompetensi.">
+  <meta property="og:url" content="https://ujikomconnect.com/">
+  <meta property="og:site_name" content="UJIKOM CONNECT">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "UJIKOM CONNECT",
+    "description": "Layanan pendampingan kandidat dalam memilih LSP, mengurus pengajuan uji kompetensi, dan mendampingi proses ujikom.",
+    "url": "https://ujikomconnect.com/",
+    "areaServed": "ID",
+    "serviceType": [
+      "Pendampingan Uji Kompetensi",
+      "Pemilihan LSP",
+      "Sertifikasi Profesi"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#090909;
+      --card:#151515;
+      --card2:#1c1c1c;
+      --gold:#d6a84f;
+      --gold2:#f2d48a;
+      --text:#f7f7f7;
+      --muted:#b7b7b7;
+      --line:rgba(255,255,255,.09);
+      --max:1120px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(92%,var(--max));margin:auto}
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(9,9,9,.94);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    nav{
+      min-height:72px;display:flex;align-items:center;
+      justify-content:space-between;gap:20px;
+    }
+    .brand{font-weight:900;letter-spacing:1.5px;font-size:18px}
+    .brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:24px;align-items:center}
+    .navlinks a{color:#ddd;font-size:14px}
+    .navlinks a:hover{color:var(--gold2)}
+    .menu{display:none;background:none;border:0;color:white;font-size:26px;cursor:pointer}
+    .hero{
+      padding:95px 0 80px;
+      background:
+        radial-gradient(circle at 80% 20%,rgba(214,168,79,.16),transparent 30%),
+        radial-gradient(circle at 10% 80%,rgba(214,168,79,.08),transparent 28%);
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.15fr .85fr;
+      gap:55px;align-items:center;
+    }
+    .eyebrow{
+      color:var(--gold2);font-size:13px;font-weight:800;
+      letter-spacing:2px;text-transform:uppercase;margin-bottom:15px;
+    }
+    h1{font-size:clamp(38px,6vw,70px);line-height:1.05;margin-bottom:22px}
+    h1 span{color:var(--gold)}
+    .lead{font-size:18px;color:#d0d0d0;max-width:680px;margin-bottom:30px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 22px;border-radius:10px;font-weight:800;
+      border:1px solid var(--gold);transition:.2s;
+    }
+    .btn.primary{background:var(--gold);color:#111}
+    .btn.primary:hover{background:var(--gold2)}
+    .btn.secondary{color:white}
+    .btn.secondary:hover{background:#1b1b1b}
+    .hero-card{
+      background:linear-gradient(145deg,#1a1a1a,#0f0f0f);
+      border:1px solid rgba(214,168,79,.28);
+      border-radius:22px;padding:30px;
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    .hero-card h2{font-size:22px;margin-bottom:12px}
+    .hero-card p{color:var(--muted);font-size:14px}
+    .checklist{list-style:none;margin-top:22px;display:grid;gap:13px}
+    .checklist li{display:flex;gap:10px;color:#ddd}
+    .check{color:var(--gold2);font-weight:bold}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .section-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:10px}
+    .section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:26px;
+    }
+    .card h3{margin:12px 0 8px;font-size:20px}
+    .card p{color:var(--muted);font-size:15px}
+    .icon{
+      width:46px;height:46px;border-radius:12px;
+      display:grid;place-items:center;
+      background:rgba(214,168,79,.12);color:var(--gold2);
+      font-size:22px;
+    }
+    .steps{counter-reset:step}
+    .step{position:relative;padding-top:58px}
+    .step:before{
+      counter-increment:step;content:counter(step);
+      position:absolute;top:0;left:0;
+      width:42px;height:42px;border-radius:50%;
+      display:grid;place-items:center;background:var(--gold);color:#111;font-weight:900;
+    }
+    .faq{max-width:850px;margin:auto}
+    details{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:12px;padding:18px 20px;margin-bottom:10px;
+    }
+    summary{cursor:pointer;font-weight:800}
+    details p{color:var(--muted);padding-top:12px}
+    .cta{
+      background:linear-gradient(135deg,#1b1b1b,#0d0d0d);
+      border:1px solid rgba(214,168,79,.3);
+      border-radius:22px;padding:45px;text-align:center;
+    }
+    .cta h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+    .cta p{color:var(--muted);max-width:650px;margin:0 auto 25px}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:#999;font-size:14px}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .wa{
+      position:fixed;right:20px;bottom:20px;z-index:60;
+      background:#25D366;color:white;width:58px;height:58px;
+      border-radius:50%;display:grid;place-items:center;
+      font-weight:900;box-shadow:0 8px 30px rgba(0,0,0,.35);
+    }
+    @media(max-width:800px){
+      .navlinks{
+        display:none;position:absolute;left:0;right:0;top:72px;
+        background:#0c0c0c;padding:18px 4%;
+        flex-direction:column;align-items:flex-start;
+        border-bottom:1px solid var(--line);
+      }
+      .navlinks.open{display:flex}
+      .menu{display:block}
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .hero{padding-top:65px}
+      .cta{padding:32px 20px}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#beranda" aria-label="UJIKOM CONNECT">UJIKOM <span>CONNECT</span></a>
+      <button class="menu" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div class="navlinks" id="navLinks">
+        <a href="#layanan">Layanan</a>
+        <a href="#cara">Cara Kerja</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Pendampingan Uji Kompetensi</div>
+        <h1>Temukan <span>LSP</span> yang sesuai untuk Ujikom Anda.</h1>
+        <p class="lead">
+          <strong>UJIKOM CONNECT</strong> membantu kandidat menemukan LSP yang sesuai
+          dengan bidang kompetensinya, mengurus pengajuan, dan mendapatkan pendampingan
+          sampai proses uji kompetensi selesai.
+        </p>
+        <div class="actions">
+          <!-- GANTI NOMOR DI LINK WHATSAPP INI -->
+          <a class="btn primary" href="https://wa.me/6281234567890?text=Halo%20UJIKOM%20CONNECT%2C%20saya%20ingin%20konsultasi%20uji%20kompetensi." target="_blank" rel="noopener">Konsultasi WhatsApp</a>
+          <a class="btn secondary" href="#layanan">Lihat Layanan</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Kenapa UJIKOM CONNECT?</h2>
+        <p>Kami membantu Anda memahami proses sertifikasi dan memilih jalur yang sesuai dengan kompetensi Anda.</p>
+        <ul class="checklist">
+          <li><span class="check">✓</span> Membantu mencari LSP yang relevan</li>
+          <li><span class="check">✓</span> Membantu proses pengajuan ujikom</li>
+          <li><span class="check">✓</span> Pendampingan proses sertifikasi</li>
+          <li><span class="check">✓</span> Informasi proses yang mudah dipahami</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Layanan</div>
+        <h2>Pendampingan yang Anda butuhkan</h2>
+        <p>Dari mencari LSP sampai memahami tahapan uji kompetensi.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">🔎</div>
+          <h3>Pencarian LSP</h3>
+          <p>Membantu kandidat mencari LSP yang relevan dengan bidang dan kebutuhan uji kompetensinya.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📋</div>
+          <h3>Pengajuan Ujikom</h3>
+          <p>Mendampingi persiapan informasi dan proses pengajuan uji kompetensi sesuai ketentuan LSP terkait.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🤝</div>
+          <h3>Pendampingan</h3>
+          <p>Memberikan arahan selama proses agar kandidat lebih memahami tahapan yang perlu dijalani.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cara">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Cara Kerja</div>
+        <h2>Proses sederhana</h2>
+        <p>Mulai dari konsultasi hingga mendapatkan informasi proses ujikom.</p>
+      </div>
+      <div class="grid steps">
+        <article class="card step">
+          <h3>Konsultasi</h3>
+          <p>Sampaikan bidang kompetensi dan kebutuhan sertifikasi Anda.</p>
+        </article>
+        <article class="card step">
+          <h3>Pilihan LSP</h3>
+          <p>Kami membantu mengarahkan pencarian LSP yang relevan dengan kebutuhan Anda.</p>
+        </article>
+        <article class="card step">
+          <h3>Proses Ujikom</h3>
+          <p>Ikuti proses pengajuan dan uji kompetensi sesuai persyaratan LSP.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Pertanyaan yang sering ditanyakan</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Apa itu UJIKOM CONNECT?</summary>
+          <p>UJIKOM CONNECT adalah layanan pendampingan kandidat untuk membantu mencari LSP yang sesuai dan memahami proses uji kompetensi.</p>
+        </details>
+        <details>
+          <summary>Apakah UJIKOM CONNECT adalah LSP?</summary>
+          <p>UJIKOM CONNECT berfokus pada jasa pendampingan. Pelaksanaan sertifikasi dan uji kompetensi dilakukan oleh LSP yang terkait sesuai kewenangannya.</p>
+        </details>
+        <details>
+          <summary>Bagaimana cara mulai konsultasi?</summary>
+          <p>Hubungi UJIKOM CONNECT melalui WhatsApp dan sampaikan bidang kompetensi serta kebutuhan sertifikasi Anda.</p>
+        </details>
+        <details>
+          <summary>Apakah semua kandidat bisa memilih LSP yang sama?</summary>
+          <p>Tidak selalu. Kesesuaian LSP dapat bergantung pada bidang kompetensi, skema sertifikasi, persyaratan, lokasi, jadwal, dan ketentuan LSP.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="container">
+      <div class="cta">
+        <div class="eyebrow">Mulai Sekarang</div>
+        <h2>Siap mencari LSP yang sesuai?</h2>
+        <p>Konsultasikan kebutuhan uji kompetensi Anda bersama UJIKOM CONNECT.</p>
+        <!-- GANTI NOMOR DI LINK WHATSAPP INI -->
+        <a class="btn primary" href="https://wa.me/6281234567890?text=Halo%20UJIKOM%20CONNECT%2C%20saya%20ingin%20konsultasi%20tentang%20ujikom." target="_blank" rel="noopener">Chat WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>© <span id="year"></span> <strong>UJIKOM CONNECT</strong>. Semua hak dilindungi.</div>
+    <!-- GANTI href DENGAN LINK GOOGLE BUSINESS PROFILE ANDA -->
+    <a href="https://www.google.com/search?q=UJIKOM+CONNECT" target="_blank" rel="noopener">Lihat di Google</a>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/6281234567890?text=Halo%20UJIKOM%20CONNECT%2C%20saya%20ingin%20konsultasi%20ujikom." target="_blank" rel="noopener" aria-label="Chat WhatsApp">WA</a>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("open"));
+  });
+</script>
+</body>
+</html>
