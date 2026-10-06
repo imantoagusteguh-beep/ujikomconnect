@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOTRA MANDIRI - Konsultasi & Pendampingan Sertifikasi Kompetensi Profesi</title>
+    <title>VOTRA MANDIRI - Konsultasi & sertifikasi</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
     <!-- Top Notification / Badge -->
     <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 text-indigo-200 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-indigo-700/40">
-        ✨ Homebase Resmi: <span class="text-white font-semibold">Agustinus Teguh Imanto</span> | Konsultasi dan Pendampingan!
+        ✨ Homebase Resmi: <span class="text-white font-semibold">Agustinus Teguh Imanto</span> | Konsultasi dan sertifikasi!
     </div>
 
     <!-- Header / Hero Section -->
@@ -23,7 +23,7 @@
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-950/0 to-slate-950/0 pointer-events-none"></div>
         <div class="max-w-3xl mx-auto relative z-10">
             <span class="inline-block bg-amber-500/10 text-amber-400 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest border border-amber-500/20 mb-4">
-                Pendampingan & Uji Kompetensi Profesional
+                KONSULTASI & SERTIFIKASI
             </span>
             <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
                 VOTRA MANDIRI
@@ -91,7 +91,7 @@
                     </div>
 
                     <button onclick="kirimWhatsAppHomebase()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-4 rounded-2xl transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20 text-sm">
-                        <span>💬 Konsultasi & Daftar (Homebase)</span>
+                        <span>💬Klik Daftar & Konsultasi </span>
                     </button>
                 </div>
 
@@ -122,7 +122,7 @@
                             <option value="Bidang Lainnya">Pilih: Bidang Lainnya</option>
                         </select>
                         <button onclick="kirimWhatsAppLSP()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-4 rounded-2xl transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/20 text-sm">
-                            <span>💬 Konsultasi Pendampingan LSP</span>
+                            <span>💬 Klik Dartar & Konsultasi</span>
                         </button>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
         const nomorWhatsApp = "6289616859373"; 
 
         function kirimWhatsAppHomebase() {
-            const pesan = "Halo VOTRA MANDIRI, saya ingin berkonsultasi mengenai uji kompetensi langsung di homebase untuk bidang (TOT Instruktur / Penyelenggara Pelatihan / Staf Administrasi / Housekeeper & Domestik). Mohon informasinya lebih lanjut. Terima kasih.";
+            const pesan = "Halo VOTRA MANDIRI, saya ingin Konsultasi & Daftar (TOT Instruktur Junior / Penyelenggara Pelatihan / Staf Administrasi / Housekeeper & Domestik). Mohon informasinya lebih lanjut. Terima kasih.";
             const url = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
             window.open(url, '_blank');
         }
@@ -158,7 +158,7 @@
         function kirimWhatsAppLSP() {
             const dropdown = document.getElementById('pilihanBidangLSP');
             const bidangPilihan = dropdown.value;
-            const pesan = `Halo VOTRA MANDIRI, saya ingin konsultasi dan pendampingan pengarahan ke LSP berlisensi untuk bidang: *${bidangPilihan}*. Mohon bimbingan dan arahannya. Terima kasih.`;
+            const pesan = `Halo VOTRA MANDIRI, saya ingin konsultasi & Daftar untuk bidang: *${bidangPilihan}*. Mohon bimbingan dan arahannya. Terima kasih.`;
             const url = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
             window.open(url, '_blank');
         }
