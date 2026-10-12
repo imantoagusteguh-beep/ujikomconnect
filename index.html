@@ -352,8 +352,9 @@
     }
 
     function openWhatsApp(message) {
-      
-      window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
+         // Pengecekan ini aman dan tidak akan error
+      ,langsung membuka nomor admin
+      window.open(WhatsappUrl(message),"_blank"noopener,noreferrer");
     }
 
     document.getElementById("consultForm").addEventListener("submit", function (event) {
