@@ -13,7 +13,7 @@
         
         <!-- Header / Judul Utama -->
         <div class="text-center max-w-2xl mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-amber-500 mb-2">Ceritakan kebutuhan sertifikasi Anda</h1>
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-amber-500 mb-2">kebutuhan sertifikasi Anda</h1>
             <p class="text-stone-400 text-sm sm:text-base">Isi formulir singkat berikut. WhatsApp akan terbuka dengan pesan yang sudah disiapkan.</p>
         </div>
 
@@ -36,41 +36,34 @@
             <!-- Form Bagian Kanan -->
             <div class="space-y-4 flex flex-col justify-between">
                 <div class="space-y-4">
-                    <!-- Nama Panggilan -->
+                    <!-- Nama lengkap -->
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Nama panggilan</label>
-                        <input type="text" id="nama" placeholder="Contoh: Budi" 
+                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Nama lengkap</label>
+                        <input type="text" id="nama" placeholder="Contoh: Budi santosa" 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
                     </div>
 
-                    <!-- Bidang Keahlian -->
+                    <!-- Keahlian  -->
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Bidang keahlian atau pekerjaan</label>
-                        <input type="text" id="bidang" placeholder="Contoh: instruktur, housekeeping, administrasi" 
+                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">keahlian</label>
+                        <input type="text" id="keahlian" placeholder="Contoh: instruktur, housekeeper, administrasi" 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
                     </div>
 
                     <!-- Layanan yang Dibutuhkan -->
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Layanan yang dibutuhkan</label>
-                        <select id="layanan" 
-                            class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 text-sm focus:outline-none focus:border-amber-500 transition-colors">
-                            <option value="" disabled selected>Pilih kebutuhan</option>
-                            <option value="Bimbingan & Pendaftaran Berkas">Bimbingan & Pendaftaran Berkas</option>
-                            <option value="Pelatihan & Sertifikasi Instruktur">Pelatihan & Sertifikasi Instruktur</option>
-                            <option value="Sertifikasi Manajer Pelatihan">Sertifikasi Manajer Pelatihan</option>
-                            <option value="Sertifikasi Housekeeping / Caregiver">Sertifikasi Housekeeping / Caregiver</option>
-                            <option value="Konsultasi Umum BNSP">Konsultasi Umum BNSP</option>
-                        </select>
-                    </div>
-
+                      <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">keahlian</label>
+                        <input type="text" id="keahlian" placeholder="Contoh: konsultasi, sertifikasi" 
+                            class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                </div>  
+                  
                     <!-- Catatan Tambahan -->
                     <div>
                         <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Catatan tambahan (opsional)</label>
                         <textarea id="catatan" rows="2" placeholder="Tuliskan pertanyaan atau informasi tambahan..." 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors resize-none"></textarea>
                     </div>
-                </div>
+               
 
                 <!-- Tombol Kirim WhatsApp -->
                 <div class="pt-2" id="kontak">
