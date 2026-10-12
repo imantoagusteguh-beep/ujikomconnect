@@ -352,9 +352,7 @@
     }
 
     function openWhatsApp(message) {
-      if (!/^62\d{8,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER === "6289616859373") {
-        alert("Nomor WhatsApp belum diatur. Buka file index.html, lalu ganti 6289616859373 dengan nomor WhatsApp admin VOTRA MANDIRI.");
-        return;
+      window.location.href= whatsappUrl(message)
       }
       window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
     }
