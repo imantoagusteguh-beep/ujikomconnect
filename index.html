@@ -25,7 +25,7 @@
                 <div>
                     <h2 class="text-2xl font-bold text-amber-400 mb-2">Halo, Kak! 👋</h2>
                     <p class="text-stone-300 text-sm leading-relaxed mb-4">
-                        Terima kasih sudah menghubungi <strong class="text-white">VOTRA MANDIRI</strong>. Kami siap membantu memberikan arahan awal terkait kebutuhan sertifikasi kompetensi.
+                        Terima kasih sudah menghubungi <strong class="text-white">VOTRA MANDIRI</strong>. Kami siap membantu memberikan arahan awal terkait kebutuhan sertifikasi kompetensi BNSP.
                     </p>
                 </div>
                 <div class="bg-amber-950/40 border border-amber-600/30 rounded-lg p-3 text-xs text-amber-200/90 leading-relaxed">
@@ -36,34 +36,41 @@
             <!-- Form Bagian Kanan -->
             <div class="space-y-4 flex flex-col justify-between">
                 <div class="space-y-4">
-                    <!-- Nama lengkap -->
+                    <!-- Nama Lengkap -->
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Nama lengkap</label>
-                        <input type="text" id="nama" placeholder="Contoh: Budi santosa" 
+                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Nama panggilan</label>
+                        <input type="text" id="nama" placeholder="Contoh: Budi" 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
                     </div>
 
-                    <!-- Keahlian  -->
+                    <!--  Keahlian / Pekerjaan -->
                     <div>
-                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">keahlian</label>
-                        <input type="text" id="keahlian" placeholder="Contoh: instruktur, housekeeper, administrasi" 
+                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Bidang keahlian atau pekerjaan</label>
+                        <input type="text" id="bidang" placeholder="Contoh: instruktur, housekeeping, administrasi" 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
                     </div>
 
                     <!-- Layanan yang Dibutuhkan -->
                     <div>
-                      <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Layanan yang dibutuhkan</label>
-                        <input type="text" id="Layanan yang dibutuhkan" placeholder="Contoh: konsultasi bidang & Skema BNSP , sertifikasi kompetensi" 
-                            class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors">
-                </div>  
-                  
+                        <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Layanan yang dibutuhkan</label>
+                        <select id="layanan" 
+                            class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-stone-100 text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            <option value="" disabled selected>Pilih kebutuhan</option>
+                            <option value="syarat dasar ujikom">syarat dasar ujikoms</option>
+                            <option value="konsultasi tentang sertifikasir">konsulatasi tentang sertifikasi</option>
+                            <option value="ujikompetensi BNSP">Uji Kompetensi BNSP</option>
+                            <option value="Sertifikasi Housekeeping / Caregiver">Sertifikasi Housekeeping / Caregiver</option>
+                            <option value="Konsultasi Umum BNSP">Konsultasi Umum BNSP</option>
+                        </select>
+                    </div>
+
                     <!-- Catatan Tambahan -->
                     <div>
                         <label class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Catatan tambahan (opsional)</label>
                         <textarea id="catatan" rows="2" placeholder="Tuliskan pertanyaan atau informasi tambahan..." 
                             class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2 text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 transition-colors resize-none"></textarea>
                     </div>
-               
+                </div>
 
                 <!-- Tombol Kirim WhatsApp -->
                 <div class="pt-2" id="kontak">
@@ -82,15 +89,15 @@
     <script>
         function kirimKeWhatsApp() {
             // Ambil nilai dari setiap input form
-            const nama = document.getElementById('nama').value.trim();
-            const bidang = document.getElementById('bidang').value.trim();
-            const layanan = document.getElementById('layanan').value;
+            const Nama Lengkap = document.getElementById('nama').value.trim();
+            const Bidang/Pekerjaan = document.getElementById('bidang').value.trim();
+            const Layanan yang dibutuhkan = document.getElementById('layanan').value;
             const catatan = document.getElementById('catatan').value.trim();
 
             // Validasi sederhana (opsional, pastikan nama terisi)
             if (!nama) {
                 alert("Mohon masukkan nama panggilan Anda terlebih dahulu.");
-                document.getElementById('VOTRA MANDIRI').focus();
+                document.getElementById('nama').focus();
                 return;
             }
 
@@ -99,9 +106,9 @@
 
             // Susun format pesan yang rapi dengan encode baris baru (%0A)
             let pesan = `Halo Admin VOTRA MANDIRI, saya ingin berkonsultasi mengenai sertifikasi.%0A%0A` +
-                          `*Nama:* ${nama}%0A` +
-                          `*Bidang:* ${bidang ? bidang : '-'}%0A` +
-                          `*Layanan:* ${layanan ? layanan : '-'}`;
+                          `*Nama Lengkap:* ${Nama lengkap}%0A` +
+                          `*Keahlian/pekerjaan:* ${bidang ? bidang : '-'}%0A` +
+                          `*Layanan yang dibutuhkan:* ${layanan yang dibutuhkan ? Layanan yang dibutuhkan : '-'}`;
 
             if (catatan) {
                 pesan += `%0A*Catatan:* ${catatan}`;
